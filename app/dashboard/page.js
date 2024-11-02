@@ -1,4 +1,11 @@
-// `app/dashboard/page.js` is the UI for the `/dashboard` URL
-export default function Page() {
-    return <h1>Hello, Dashboard Page!</h1>
-  }
+
+import Link from 'next/link'
+
+export default function Page () {
+  return (
+    <>
+      <Link href='/'>Home</Link>
+      <h1>Hello, Dashboard Page!</h1>
+    </>
+  );
+}
